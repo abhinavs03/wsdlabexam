@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="portfolio.xsl" type="text/xsl" ?>
+<Portfolio xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.example.com/portfolio" xsi:schemaLocation="http://www.example.com/portfolio portfolio.xsd">
+    <item>
+        <title>Online Tyre Alloy Store</title>
+        <description>This is an e-commerce website exclusively for tyre alloy wheels.</description>
+        <technologies>
+            <front-end>HTML,CSS</front-end>
+            <back-end>PHP,Javascript</back-end>
+        </technologies>
+    </project>
+    <project>
+        <title>Online Spa Booking System</title>
+        <description>This is a platform through which you can book for spa treatments according to your comfortable date and time.</description>
+        <technologies>
+            <front-end>HTML,CSS</front-end>
+            <back-end>Django,MySQL</back-end>
+        </technologies>
+    </item>
+</Portfolio>

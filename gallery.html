@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Portfolio</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+            body {
+                font-family: 'Poppins', sans-serif;
+                line-height: 1.6;
+                margin: 0;
+                padding: 0;
+                background: url(./bg1.jpg);
+                background-size: cover;
+            }
+
+            header {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                padding: 20px 50px;
+                background: transparent;
+                border: 1px solid gray;
+                backdrop-filter: blur(20px);
+                box-shadow: 0 0 10px gray;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                z-index: 100;
+            }
+
+            .navbar a {
+                text-decoration: none;
+                align-items: center;
+            }
+
+            .nav-link {
+                display: inline-block;
+            }
+
+            .nav-link:hover {
+                color: blue;
+            }
+
+            .nav-item a {
+                color: black;
+                padding: 10px;
+            }
+
+            .navbar-brand {
+                font-size: 1.8em;
+                font-weight: 700;
+                color: white;
+                display: inline-block;
+                align-items: center;
+            }
+
+            .flex-container {
+                margin: 0 auto; /* Center horizontally */
+                min-height: 100vh;
+                width: 75%;
+                display: flex;
+                flex-direction: row;
+                gap: 15px;
+                flex-wrap: wrap;
+                padding: 20px;
+                justify-content: center; /* Center items horizontally */
+                align-items: center;
+                margin-top: 100px;
+            }
+
+            .flex-items {
+                backdrop-filter: blur(20px);
+                border: 1px solid gray;
+                border-radius: 6px;
+                padding: 0;
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                flex: 1 1 calc(25% - 40px);
+                overflow: hidden;
+                background-color: transparent;
+                height: 500px;
+            }
+
+            .flex-items img {
+                width: 100%;
+                height: 300px;
+                border-radius: 10px;
+            }
+
+            .flex-items figcaption {
+                margin-top: 10px;
+                text-align: center;
+                font-weight: 600;
+                color: #000080;
+            }
+            .flex-items button {
+                color: black;
+                border: none;
+                border-radius: 20px;
+                background-color: white;
+                cursor: pointer;
+                margin: 16px 0;
+                padding: 10px 20px;
+                font-weight: 600;
+            }
+
+            .flex-items figure {
+                align-items: center;
+            }
+
+            @media (max-width: 768px) {
+                header {
+                    padding: 5px;
+                }
+                section {
+                    grid-template-columns: 1fr;
+                }
+            }
+
+            @media (max-width: 576px) {
+                main {
+                    flex-direction: column;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <div class="navbar">
+                <nav>
+                    <a class="navbar-brand" href="home.html">Portfolio</a>
+                    <div class="nav-item" style="margin-left: 1250px; margin-top: -50px;">
+                        <a class="nav-link" href="home.html">Home</a>
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div class="flex-container">
+                <div class="flex-items">
+                    <figure>
+                        <img src="./alloy.jpg" alt="Online Tyre Alloy Store">
+                        <figcaption>Online Tyre Alloy Store</figcaption>
+                    </figure>
+                    <button data-bs-toggle="modal" data-bs-target="#alloyModal">Click Here</button>
+                </div>
+                <div class="flex-items">
+                    <figure>
+                        <img src="./spa.jpg" alt="Online Spa Booking System">
+                        <figcaption>Online Spa Booking System</figcaption>
+                    </figure>
+                    <button data-bs-toggle="modal" data-bs-target="#spaModal">Click Here</button>
+                </div>
+            </div>
+        </main>
+        <footer></footer>
+
+        <!-- Alloy Modal -->
+        <div class="modal fade" id="alloyModal" tabindex="-1" aria-labelledby="alloyModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="alloyModalLabel">Online Tyre Alloy Store</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>This is an e-commerce website exclusively for tyre alloy wheels. The site allows users to browse through a variety of alloy wheels, check availability, and place orders online. It is built using HTML, CSS for the front-end and PHP, JavaScript for the back-end.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Spa Modal -->
+        <div class="modal fade" id="spaModal" tabindex="-1" aria-labelledby="spaModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="spaModalLabel">Online Spa Booking System</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>This platform allows users to book spa treatments according to their preferred date and time. It provides a user-friendly interface to select services, choose therapists, and schedule appointments. The project uses HTML, CSS for the front-end and Django, MySQL for the back-end.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bootstrap JS -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
